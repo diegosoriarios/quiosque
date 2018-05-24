@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+	background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+}
+
+#ttl{
+	font-size: 4em;
+	text-align: center;
+	color: #fff;
+	text-shadow: 2px 2px #000;
+  font-family: 'Pangolin', cursive;
+}
+
+#hexGrid {
+  	display: flex;
+  	flex-wrap: wrap;
+  	width: 90%;
+  	margin: 0 auto;
+  	overflow: hidden;
+  	font-family: 'Raleway', sans-serif;
+  	font-size: 12px;
+  	list-style-type: none;
+}
+
+.hex {
+  	position: relative;
+  	visibility:hidden;
+  	outline: 1px solid transparent; /* fix for jagged edges in FF on hover transition */
+}
+.hex::after{
+  	content:'';
+  	display:block;
+  	padding-bottom: 86.602%;  /* =  100 / tan(60) * 1.5 */
+}
+.hexIn{
+	position: absolute;
+  	width:96%;
+  	padding-bottom: 110.851%; /* =  width / sin(60) */
+  	margin:0 2%;
+  	overflow: hidden;
+  	visibility: hidden;
+  	outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+  	-webkit-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+      -ms-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+          transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+}
+.hexIn * {
+  	position: absolute;
+  visibility: visible;
+  outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+}
+.hexLink {
+    display:block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    -webkit-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+        -ms-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+            transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+}
+
+.hexPage {
+    display:block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    -webkit-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+        -ms-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+            transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+}
+
+/*** HEX CONTENT **********************************************************************/
+.hex img {
+	left: -100%;
+  	right: -100%;
+  	width: auto;
+  	height: 100%;
+  	margin: 0 auto;
+  	-webkit-transform: rotate3d(0,0,0,0deg);
+      	-ms-transform: rotate3d(0,0,0,0deg);
+          	transform: rotate3d(0,0,0,0deg);
+}
+
+.hex h1, .hex p {
+  	width: 100%;
+  	padding: 5%;
+  	box-sizing:border-box;
+  	background-color: rgba(153, 102, 0, 0.8);
+  	font-weight: 300;
+  	-webkit-transition:  -webkit-transform .2s ease-out, opacity .3s ease-out;
+          	transition:          transform .2s ease-out, opacity .3s ease-out;
+}
+.hex h1 {
+  	bottom: 50%;
+  	padding-top:50%;
+  	font-size: 1.5em;
+  	z-index: 1;
+  	-webkit-transform:translate3d(0,-100%,0);
+      	-ms-transform:translate3d(0,-100%,0);
+          	transform:translate3d(0,-100%,0);
+}
+.hex h1::after {
+  	content: '';
+  	position: absolute;
+  	bottom: 0;
+  	left: 45%;
+  	width: 10%;
+  	text-align: center;
+  	border-bottom: 1px solid #fff;
+}
+.hex p {
+  	top: 50%;
+  	padding-bottom:50%;
+  	-webkit-transform:translate3d(0,100%,0);
+      	-ms-transform:translate3d(0,100%,0);
+          	transform:translate3d(0,100%,0);
+}
+
+
+/*** HOVER EFFECT  **********************************************************************/
+.hexLink:hover h1, .hexLink:focus h1,
+.hexLink:hover p, .hexLink:focus p{
+  -webkit-transform:translate3d(0,0,0);
+      -ms-transform:translate3d(0,0,0);
+          transform:translate3d(0,0,0);
+}
+
+.hexPage:hover h1, .hexPage:focus h1,
+.hexPage:hover p, .hexPage:focus p{
+  -webkit-transform:translate3d(0,0,0);
+      -ms-transform:translate3d(0,0,0);
+          transform:translate3d(0,0,0);
+}
+
+#footer{
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  color: black;
+  background: linear-gradient(to right, rgba(0,0,0,0), rgba(255,255,57,1));
+}
+
+#footer span{
+  float: right;
+  padding-right: 0.5%;
+}
+
+#footer a{
+  text-decoration: none;
+  color: black;
+}
+
+#footer p{
+  padding-left: 0.5%;
+}
+
+#lk{
+  position: relative;
+  top: 05%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Raleway', sans-serif;
+  color: #818181;
+}
+
+#lk span{
+  font-size: 2em;
+}
+
+#lk a{
+  margin-left: 2%;
+  margin-right: 2%;
+  text-decoration: none;
+}
+
+#lk #face{
+  position: relative;
+  bottom: 10px;
+  font-size: 1.5em;
+  color: white;
+}
+
+#lk span:hover, #lk #face:hover{
+  color: #f1f1f1;
+}
+
+/***FORM*********************************/
+form #btn-submit{
+  background: #ffed4b;
+  color: #000;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #eee;
+  text-shadow:none;
+  width: 10%;
+  height: 25px;
+}
+
+form #btn-submit:hover{
+  background: #fdcd3b;
+  color: #000;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #eee;
+  text-shadow:none;
+}
+
+form textarea{
+  resize:none;
+}
+
+a.download{
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    font-weight: bold;
+    background: #fdcd3b;
+    padding: 8px 10px;
+    border-radius: 3px;
+    display: block;
+    width: 120px;
+    margin: 100px auto 0 auto;
+    text-align: center;
+    z-index: 100;
+    transition: opacity .8s ease;
+}
+
+/*** HEXAGON SIZING AND EVEN ROW INDENTATION *****************************************************************/
+@media (min-width:1201px) { /* <- 5-4  hexagons per row */
+  #hexGrid{
+    padding-bottom: 4.4%
+  }
+  .hex {
+    width: 20%; /* = 100 / 5 */
+  }
+  .hex:nth-child(9n+6){ /* first hexagon of even rows */
+    margin-left:10%;  /* = width of .hex / 2  to indent even rows */
+  }
+}
+
+@media (max-width: 1200px) and (min-width:901px) { /* <- 4-3  hexagons per row */
+  #hexGrid{
+    padding-bottom: 5.5%
+  }
+  .hex {
+    width: 25%; /* = 100 / 4 */
+  }
+  .hex:nth-child(7n+5){ /* first hexagon of even rows */
+    margin-left:12.5%;  /* = width of .hex / 2  to indent even rows */
+  }
+}
+
+@media (max-width: 900px) and (min-width:601px) { /* <- 3-2  hexagons per row */
+  #hexGrid{
+    padding-bottom: 7.4%
+  }
+  .hex {
+    width: 33.333%; /* = 100 / 3 */
+  }
+  .hex:nth-child(5n+4){ /* first hexagon of even rows */
+    margin-left:16.666%;  /* = width of .hex / 2  to indent even rows */
+  }
+}
+
+@media (max-width: 600px) { /* <- 2-1  hexagons per row */
+  #hexGrid{
+    padding-bottom: 11.2%
+  }
+  .hex {
+    width: 50%; /* = 100 / 3 */
+  }
+  .hex:nth-child(3n+3){ /* first hexagon of even rows */
+    margin-left:25%;  /* = width of .hex / 2  to indent even rows */
+  }
+}
+
+@media (max-width: 400px) {
+    #hexGrid h1{
+        font-size: 13px;
+    }
+
+    #hexGrid p{
+        font-size: 7px;
+    }
+
+    #footer{
+      position: relative;
+      bottom: 0;
+      font-size: 12px;
+    }
+}
