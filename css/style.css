@@ -298,4 +298,16 @@ a.download{
       bottom: 0;
       font-size: 12px;
     }
+
+    form input{
+      width: 50%;
+    }
+
+    textarea{
+      width: 75%;
+    }
+
+    form #btn-submit{
+      width: 50%;
+    }
 }

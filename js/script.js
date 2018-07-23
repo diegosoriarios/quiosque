@@ -33,6 +33,12 @@ function teste(opcao){
         case 11:
           document.getElementById("recados").style.width = "100%";
           break;
+        case 12:
+            document.getElementById("colaboradores").style.width = "100%";
+            break;
+        case 13:
+              document.getElementById("mantenedores").style.width = "100%";
+              break;
 
       }
     }
@@ -56,7 +62,7 @@ function teste(opcao){
   function closeDj() {
       document.getElementById("dj").style.width = "0%";
   }
-  
+
   function closeMusicando() {
       document.getElementById("musicando").style.width = "0%";
   }
@@ -85,6 +91,14 @@ function teste(opcao){
       document.getElementById("recados").style.width = "0%";
   }
 
+  function closeColaboradores() {
+      document.getElementById("colaboradores").style.width = "0%";
+  }
+
+  function closeMantenedores() {
+      document.getElementById("mantenedores").style.width = "0%";
+  }
+
 //TITULO
 var space = " ";
   var speed = "140";
@@ -96,7 +110,7 @@ var space = " ";
     if (pos > msg.length + 0) pos = -20;
       window.setTimeout(scroll, speed);
   }
-  scroll();  
+  scroll();
 
   $('.hexLink').click(function(e) {
     e.preventDefault();
