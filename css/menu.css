@@ -93,3 +93,15 @@ i:hover{
     }
 
 }
+
+
+iframe{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    border: none;
+}

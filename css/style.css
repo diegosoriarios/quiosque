@@ -311,3 +311,10 @@ a.download{
       width: 50%;
     }
 }
+
+#cgal{
+  position: absolute;
+  right: 50px;
+  top: 20px; 
+  font-size: 2em;
+}

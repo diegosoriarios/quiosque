@@ -11,6 +11,10 @@
     <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <script src="js/jquery-3.3.1.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="src/jquery.fb.albumbrowser.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="src/jquery.fb.albumbrowser.js"></script>
   </head>
   <body>
   	<h1 id="ttl">Oficinas</h1>
@@ -127,7 +131,7 @@
       <li class="hex">
         <div class="hexIn">
           <a class="hexLink" href="#" onclick="teste(12)">
-            <img src="img/facebook.png" alt="Facebook" />
+            <img src="img/colaboradores.jpg" alt="Facebook" />
             <h1>Colaboradores</h1>
             <p>Colaboradores do Quiosque</p>
           </a>
@@ -136,7 +140,7 @@
       <li class="hex">
         <div class="hexIn">
           <a class="hexLink" href="#" onclick="teste(13)">
-            <img src="img/prefeitura.jpeg" alt="Prefeitura" />
+            <img src="img/quiosque.jpg" alt="Prefeitura" />
             <h1>Mantenedores</h1>
             <p>Mantenedores do Quiosque</p>
           </a>
@@ -144,9 +148,9 @@
       </li>
       <li class="hex">
         <div class="hexIn">
-          <a class="hexPage" href="http://www.institutorobertozanatta.org/?page_id=49" target="_blank">
-            <img src="img/quiosque.jpg" alt="Instituto" />
-            <h1>Instituto</h1>
+          <a class="hexLink" href="#" onclick="teste(14)">
+            <img src="img/galeria.jpg" alt="Instituto" />
+            <h1>Galeria</h1>
             <p>Site do Instituto Roberto Zanatta</p>
           </a>
         </div>
@@ -158,7 +162,7 @@
     <div id="footer"><p><span>Copyright © 2018 - <a href="https://github.com/diegosoriarios/" >Diego Soria Rios</a></span></div>
 
     <div id="violao" class="overlay">
-  		<a href="javascript:void(0)" class="closebtn" onclick="closeViolao()"><i class="far fa-times-circle"></i></a>
+  		<a href="javascript:void(0)" class="closebtn"><i class="far fa-times-circle"></i></a>
   		<div class="overlay-content">
         <div id="box">
       		<p >Violão</p>
@@ -174,7 +178,7 @@
 	</div>
 
 	<div id="cirandar" class="overlay">
-  		<a href="javascript:void(0)" class="closebtn" onclick="closeCirandar()"><i class="far fa-times-circle"></i></a>
+  		<a href="javascript:void(0)" class="closebtn"><i class="far fa-times-circle"></i></a>
   		<div class="overlay-content">
         <div id="box">
     			<p >Cirandar</p>
@@ -186,7 +190,7 @@
 	</div>
 
 	<div id="danca" class="overlay">
-  		<a href="javascript:void(0)" class="closebtn" onclick="closeDanca()"><i class="far fa-times-circle"></i></a>
+  		<a href="javascript:void(0)" class="closebtn"><i class="far fa-times-circle"></i></a>
   		<div class="overlay-content">
         <div id="box">
     			<p >Movimento e Ritmo</p>
@@ -200,7 +204,7 @@
 	</div>
 
 	<div id="dj" class="overlay">
-  		<a href="javascript:void(0)" class="closebtn" onclick="closeDj()"><i class="far fa-times-circle"></i></a>
+  		<a href="javascript:void(0)" class="closebtn"><i class="far fa-times-circle"></i></a>
   		<div class="overlay-content">
         <div id="box">
     			<p >Oficina DJ</p>
@@ -213,7 +217,7 @@
 	</div>
 
 	<div id="musicando" class="overlay">
-  		<a href="javascript:void(0)" class="closebtn" onclick="closeMusicando()"><i class="far fa-times-circle"></i></a>
+  		<a href="javascript:void(0)" class="closebtn"><i class="far fa-times-circle"></i></a>
   		<div class="overlay-content">
         <div id="box">
   			     <p >Musicando</p>
@@ -225,7 +229,7 @@
 	</div>
 
 	<div id="teatro" class="overlay">
-  		<a href="javascript:void(0)" class="closebtn" onclick="closeTeatro()"><i class="far fa-times-circle"></i></a>
+  		<a href="javascript:void(0)" class="closebtn"><i class="far fa-times-circle"></i></a>
   		<div class="overlay-content">
         <div id="box">
     			<p >Teatro</p>
@@ -241,7 +245,7 @@
 	</div>
 
 	<div id="texto" class="overlay">
-  		<a href="javascript:void(0)" class="closebtn" onclick="closeTexto()"><i class="far fa-times-circle"></i></a>
+  		<a href="javascript:void(0)" class="closebtn"><i class="far fa-times-circle"></i></a>
   		<div class="overlay-content">
         <div id="box">
     			<p >Produção Textual</p>
@@ -253,7 +257,7 @@
 	</div>
 
 	<div id="xadrez" class="overlay">
-  		<a href="javascript:void(0)" class="closebtn" onclick="closeXadrez()"><i class="far fa-times-circle"></i></a>
+  		<a href="javascript:void(0)" class="closebtn"><i class="far fa-times-circle"></i></a>
   		<div class="overlay-content">
         <div id="box">
     			<p >Xadrez</p>
@@ -265,7 +269,7 @@
 	</div>
 
 	<div id="artes" class="overlay">
-  		<a href="javascript:void(0)" class="closebtn" onclick="closeArtes()"><i class="far fa-times-circle"></i></a>
+  		<a href="javascript:void(0)" class="closebtn"><i class="far fa-times-circle"></i></a>
   		<div class="overlay-content">
         <div id="box">
     			<p >Artes</p>
@@ -277,13 +281,13 @@
 	</div>
 
   <div id="contato" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeContato()"><i class="far fa-times-circle"></i></a>
+      <a href="javascript:void(0)" class="closebtn"><i class="far fa-times-circle"></i></a>
       <div class="overlay-content">
         <div id="box">
           <p>Contato</p>
           <p>Contato: 3311-1128 - 3312-4210 </p>
           <p>Email quiosque@pmpf.rs.gov.rs</p><br><br>
-          <p>Deixe sua mensagem</p>
+          <!--<p>Deixe sua mensagem</p>
           <form>
               <p><label for="nome">Nome:</label>
               <input type="text" id="nome" name="usr_nome" required /></p><br>
@@ -295,13 +299,13 @@
               <textarea id="msg" name="usr_msg" placeholder="Digite sua Mensagem" rows="5" cols="50" required></textarea></p><br>
 
               <button type="submit" id="btn-submit">Enviar</button><br><br>
-          </form>
+          </form>-->
         </div>
       </div>
   </div>
 
   <div id="recados" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeRecados()"><i class="far fa-times-circle"></i></a>
+      <a href="javascript:void(0)" class="closebtn"><i class="far fa-times-circle"></i></a>
       <div class="overlay-content">
         <div id="box">
           <p>Recados</p>
@@ -315,27 +319,31 @@
   </div>
 
   <div id="colaboradores" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeColaboradores()"><i class="far fa-times-circle"></i></a>
+      <a href="javascript:void(0)" class="closebtn"><i class="far fa-times-circle"></i></a>
       <div class="overlay-content">
         <div id="box">
           <p >Colaboradores</p>
-            <a href="https://pt-br.facebook.com/lavagemcaravela/"><img src="img/carro.png" alt="Auto Lavagem Caravela"></a>
+            <a href="https://pt-br.facebook.com/lavagemcaravela/" target="_blank"><img src="img/carro.png" alt="Auto Lavagem Caravela"></a>
           </div>
       </div>
   </div>
 
   <div id="mantenedores" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeMantenedores()"><i class="far fa-times-circle"></i></a>
+      <a href="javascript:void(0)" class="closebtn"><i class="far fa-times-circle"></i></a>
       <div class="overlay-content">
         <div id="box">
           <p >Mantenedores</p>
-            <a href="http://www.pmpf.rs.gov.br/"><img src="img/prefeitura.jpeg" alt="Prefeitura"></a>
-            <a href="http://institutorobertozanatta.org/"><img src="img/quiosque.jpg" alt="Quiosque"></a>
+            <a href="http://www.pmpf.rs.gov.br/" target="_blank"><img src="img/prefeitura.jpeg" alt="Prefeitura"></a>
+            <a href="http://institutorobertozanatta.org/" target="_blank"><img src="img/quiosque.jpg" alt="Quiosque"></a>
           </div>
       </div>
   </div>
 
-    <script language="JavaScript" src="js/script.js">
-	</script>
+  <div id="galeria" class="overlay">
+      <a href="javascript:void(0)" id="cgal" class="closebtn"><i class="far fa-times-circle"></i></a><br><br>
+      <iframe src="galeria.html"></iframe>
+  </div>
+
+    <script language="JavaScript" src="js/script.js"></script>
   </body>
 </html>
