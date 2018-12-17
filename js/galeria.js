@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     let fotos = [];
     const TAM = 28;
-    for(let i = 0; i <= TAM; i++){
+    for(let i = 0; i <= TAM-1; i++){
     	let foto = './fotos/' + (i+1) + '.jpg';
     	$("#hexGrid").append("<li class='hex'><div class='hexIn'><a class='hexLink' href='#' onclick='zoom("+ (i+1) + ");'><img id='imagem' src='" + foto + "' /></a></div></li>"
     	);
