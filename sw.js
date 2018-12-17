@@ -30,7 +30,7 @@ self.addEventListener('install', function(event) {
             '/css/reset.css',
             '/css/style.css',
             '/js/galeria.js',
-            '/js/jquery-3.3.1.js',
+            '/js/jquery-3.3.1.min.js',
             '/js/script.js',
         ])
       })
