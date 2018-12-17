@@ -74,26 +74,12 @@ i:hover{
         font-size: 18px;
     }
 
-    .overlay #lk{
-        font-size: 10px;
-    }
-
-    .overlay #lk span, .overlay #lk #face{
-        font-size: 10px;
-    }
-
-    .overlay #lk img{
-        height: 50px;
-        width: 50px;
-    }
-
     .overlay img{
       height: 100px;
       width: 100px;
     }
 
 }
-
 
 iframe{
     width: 90%;
