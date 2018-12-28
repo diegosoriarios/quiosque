@@ -76,16 +76,40 @@ Adicionei o service work no meu arquivo index.html
 Criei um arquivo chamado sw.js na pasta root
 >>>OBS: Se criarmos o service worker na pasta root significa que o escopo do service worker será completo, se adicionarmos dentro de uma pasta '/pasta' o escopo do service worker será só para endereços dentro dessa pasta '/pasta/site'
 ```
-var CACHE_NAME = 'nome-do-seu-cache';
+var CACHE_NAME = 'quiosque-cache';
 
 self.addEventListener('install', function(event) {
     event.waitUntil(
       caches.open(CACHE_NAME).then(function(cache) {
         return cache.addAll([
             '/',
+            '/index.html',
+            '/galeria.html',
+            '/img/artes.jpg',
+            '/img/carro.png',
+            '/img/cirandas.jpg',
+            '/img/colaboradores.jpg',
+            '/img/contato.png',
+            '/img/danca.jpg',
+            '/img/dj.jpg',
+            '/img/facebook.png',
+            '/img/galeria.jpg',
+            '/img/mantenedores.jpg',
+            '/img/musicando.jpg',
+            '/img/prefeitura.jpeg',
+            '/img/quiosque.jpg',
+            '/img/recado.jpg',
+            '/img/teatro.jpg',
+            '/img/texto.jpg',
+            '/img/violao.jpg',
+            '/img/xadrez.jpg',
+            '/css/galeria.css',
+            '/css/menu.css',
+            '/css/reset.css',
             '/css/style.css',
+            '/js/galeria.js',
+            '/js/jquery-3.3.1.min.js',
             '/js/script.js',
-            '/QUALQUER_OUTRO_ARQUIVO_QUE_QUISER.EXTENSÃO'
         ])
       })
     );
@@ -113,4 +137,5 @@ self.addEventListener('install', function(event) {
       })
     );
   });
+
 ```
