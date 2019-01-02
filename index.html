@@ -13,6 +13,16 @@
       crossorigin="anonymous">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      var OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "4817a477-1eb4-4384-a812-74b84253a693",
+        });
+      });
+    </script>
   </head>
   <body>
     <h1 id="ttl">Oficinas</h1>
