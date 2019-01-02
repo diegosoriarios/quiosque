@@ -1,4 +1,6 @@
 {
+  "gcm_sender_id": "482941778795",
+  "gcm_sender_id_comment": "Do not change the GCM Sender ID",
   "lang": "pt",
   "name": "Quiosque",
   "short_name": "Quiosque",
@@ -18,7 +20,5 @@
   "background_color": "#fff",
   "start_url": "/",
   "display": "standalone",
-  "orientation": "natural",
-  "gcm_sender_id": "482941778795",
-  "gcm_sender_id_comment": "Do not change the GCM Sender ID"
+  "orientation": "natural"
 }
