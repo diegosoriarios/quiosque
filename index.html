@@ -358,6 +358,20 @@
             console.warn('service worker failed');
           });
       }
+      /*
+      *
+      * NOTIFICAÇÕES
+      * 
+      if(window.Notification && Notification.permission !== 'denied'){
+        Notification.requestPermission(status => {
+          console.log(status);
+          let n = new Notification('Titulo', {
+            body: 'Notificação Teste',
+            icon: './quiosque.png'
+          })
+        })
+      }
+      */
     </script>
   </body>
 </html>
